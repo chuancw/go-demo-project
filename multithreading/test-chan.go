@@ -1,5 +1,8 @@
 package main
 
+/*
+读取已经关闭的通道不会发生阻塞，也不会发生panic,而是立即返回该通道类型的零值
+ */
 import (
 	"fmt"
 	"time"
